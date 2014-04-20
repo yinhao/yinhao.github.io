@@ -1,3 +1,5 @@
-name: Your New Jekyll Site
+name: 随便写写
+permalink: /:year/:month/:day/:title.html
+auto:true
 markdown: redcarpet
 pygments: true
