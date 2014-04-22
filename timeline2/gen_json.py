@@ -12,7 +12,7 @@ def gen_json(start, end):
 	for i in range(start,end+1):
 		s = '0'*(4-int(math.log(i,10)))+str(i)
 		url = 'http://pics.dmm.co.jp/digital/video/beb{}/beb{}pl.jpg'.format(s, s)
-		element = {'startDate': i, 'endDate': i, 'headline': 'BEB'+'0'*(2-int(math.log(i,10)))+str(i), 
+		element = {'startDate': str(1900 + i)+',1,1' , 'endDate': str(1900 + i)+',12,31', 'headline': 'BEB'+'0'*(2-int(math.log(i,10)))+str(i), 
 								'text': 'for Fun', 'asset': {'media': url} }
 		print element
 		date_list.append(element)
