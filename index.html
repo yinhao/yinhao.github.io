@@ -1,13 +1,33 @@
----
-layout: default
-title: Your New Jekyll Site
----
+  <head>
+    <title>Revolutionary User Interfaces</title>
+    <meta name="description" content="The human computer interface helps to define computing at any one time.">
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <!-- Style-->
+    <style>
+      html, body {
+      height:100%;
+      padding: 0px;
+      margin: 0px;
+      }
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML elements--><!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- BEGIN Timeline Embed -->
+    <div id="timeline-embed"></div>
+    <script type="text/javascript">
+      var timeline_config = {
+       width: "100%",
+       height: "100%",
+       source: 'output.json',
+       font:  'SansitaOne-Kameron'
+      }
+    </script>
+    <script type="text/javascript" src="http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
+    <!-- END Timeline Embed-->
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+  </body>
+</html>
