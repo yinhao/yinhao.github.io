@@ -19,7 +19,7 @@ def gen_json(start, end):
 
 	timeline = {'timeline': {'headline':'', 'type':'default', 'text':'', 'startDate':'', 'date': date_list}}
 	timeline['timeline']['headline'] = 'Test'
-	timeline['timeline']['startDate'] = '1900'
+	timeline['timeline']['startDate'] = '1900,1,1'
 	timeline['timeline']['text'] = 'Haha！'
 	return json.dumps(timeline,ensure_ascii=False)
 
